@@ -1,0 +1,33 @@
+# Logs
+logs
+.log
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+Dependency directories
+node_modules/
+pnpm-lock.yaml
+Production build output (se você não for usar a pasta docs para o deploy, pode descomentar dist/)
+dist/
+Optional npm cache directory
+.npm/
+Optional eslint cache
+.eslintcache
+dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+macOS
+.DS_Store
+VSCode
+.vscode/
+Editor directories and files
+.idea/
+.project
+.classpath
+.c9/
+*.tmproj
+

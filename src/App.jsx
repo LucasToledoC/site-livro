@@ -1,3 +1,4 @@
+import videoPlaceholder from './assets/videoplaceholder.mp4';
 import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
@@ -258,20 +259,13 @@ function App() {
               Assista ao vídeo produzido pelo nosso grupo de trabalho sobre "A Hora da Estrela"
             </p>
             
-            <div className="video-container">
-              <div className="video-placeholder">
-                <Play className="w-16 h-16 mb-4 mx-auto text-muted-foreground" />
-                <h3 className="text-xl font-semibold mb-2">Espaço Reservado para Vídeo</h3>
-                <p className="text-muted-foreground">
-                  O vídeo será inserido manualmente neste espaço.<br />
-                  Dimensões: 16:9 (responsivo)
-                </p>
-              </div>
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 32 }}>
+              <video controls width="600">
+                <source src={videoPlaceholder} type="video/mp4" />
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
             </div>
-            
-            <p className="text-sm text-muted-foreground mt-4">
-              Para inserir o vídeo, substitua este placeholder pelo elemento &lt;video&gt; ou &lt;iframe&gt; apropriado.
-            </p>
+
           </div>
         </div>
       </section>
@@ -284,9 +278,21 @@ function App() {
             <span className="text-xl font-bold">A Hora da Estrela</span>
           </div>
           <p className="text-lg mb-4">Trabalho Escolar sobre a obra de Clarice Lispector</p>
-          <p className="text-sm opacity-80">
+          <p className="text-sm opacity-80 mb-8">
             "Esta história acontece em estado de emergência e de calamidade pública." - Clarice Lispector
           </p>
+
+          {/* Seção de Integrantes */}
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold mb-4">Integrantes do Trabalho</h3>
+            <ul className="flex flex-wrap justify-center gap-4 text-base">
+              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Fulano da Silva</li>
+              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Beltrano Souza</li>
+              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Ciclana Oliveira</li>
+              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Maria Exemplo</li>
+              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">João Placeholder</li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>

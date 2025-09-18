@@ -1,4 +1,3 @@
-import videoPlaceholder from './assets/videoplaceholder.mp4';
 import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
@@ -261,7 +260,7 @@ function App() {
             
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 32 }}>
               <video controls width="600">
-                <source src={videoPlaceholder} type="video/mp4" />
+                <source src="/videoplaceholder.mp4" type="video/mp4" />
                 Seu navegador não suporta o elemento de vídeo.
               </video>
             </div>
@@ -284,13 +283,13 @@ function App() {
 
           {/* Seção de Integrantes */}
           <div className="mt-8">
-            <h3 className="text-lg font-semibold mb-4">Integrantes do Trabalho</h3>
+            <h3 className="text-lg font-semibold mb-4">Equipe</h3>
             <ul className="flex flex-wrap justify-center gap-4 text-base">
-              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Fulano da Silva</li>
-              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Beltrano Souza</li>
-              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Ciclana Oliveira</li>
-              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Maria Exemplo</li>
-              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">João Placeholder</li>
+              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Ana Carolliny de Camargo Prates </li>
+              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Beatriz Vieira de Araujo</li>
+              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Lucas Soares de Moraes </li>
+              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Maria Clara Paiva Polido</li>
+              <li className="bg-primary-foreground text-primary rounded px-4 py-2 shadow-sm min-w-[120px] text-center">Maria Luiza Motta dos Reis</li>
             </ul>
           </div>
         </div>

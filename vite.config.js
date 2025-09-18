@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react( )],
-  base: '/site-livro/', // <--- IMPORTANTE: Substitua 'hora-da-estrela-site' pelo NOME EXATO do seu repositório no GitHub
+  base: '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
